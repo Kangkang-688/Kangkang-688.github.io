@@ -3,159 +3,404 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>康康保洁公司 - 专业清洁服务</title>
+    <title>恒达装饰公司 - 专业墙面装饰服务</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <meta name="description" content="康康保洁公司提供专业的家庭和商业清洁服务，为您创造健康舒适的环境。">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- 导航栏 -->
     <header>
         <div class="container">
             <div class="logo">
-                <h1>康康保洁</h1>
-                <p>专业清洁，品质生活</p>
+                <h1>恒达装饰公司</h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="#home">首页</a></li>
                     <li><a href="#services">服务项目</a></li>
+                    <li><a href="#faq">常见问题</a></li>
                     <li><a href="#about">关于我们</a></li>
                     <li><a href="#contact">联系我们</a></li>
+                    <li><a href="#" class="btn-quote">在线报价</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
 
+    <!-- 首页横幅 -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2>专业保洁服务，让您的空间焕然一新</h2>
-                <p>康康保洁公司提供高品质的清洁服务，为家庭和企业创造健康舒适的环境</p>
-                <a href="#contact" class="btn btn-primary">联系我们</a>
+                <h1>专业墙面装饰服务</h1>
+                <h2>让每一面墙都成为家的风景</h2>
+                <p>专注于房屋刷漆、壁纸粘贴等装修服务，覆盖南京市及周边区域</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">了解服务</a>
+                    <a href="#contact" class="btn btn-secondary">联系我们</a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- 服务项目 -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">我们的服务</h2>
-            <div class="service-grid">
+            <div class="section-header">
+                <h2>我们的服务</h2>
+                <p>专业的墙面装饰解决方案</p>
+            </div>
+            <div class="services-grid">
                 <div class="service-card">
-                    <i class="fas fa-home"></i>
-                    <h3>家庭保洁</h3>
-                    <p>提供全面的家庭清洁服务，包括日常保洁、深度清洁和特殊场合清洁</p>
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>内墙刷漆</h3>
+                    <p>乳胶漆、硅藻泥、艺术涂料等，采用环保材料和专业滚涂、喷涂工艺</p>
+                    <a href="#" class="service-link">了解更多</a>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-building"></i>
-                    <h3>商业清洁</h3>
-                    <p>为办公室、商场、酒店等商业场所提供专业的清洁维护服务</p>
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>外墙涂料</h3>
+                    <p>耐候性涂料，可抵御风雨侵蚀，提供色彩定制服务</p>
+                    <a href="#" class="service-link">了解更多</a>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-broom"></i>
-                    <h3>专项清洁</h3>
-                    <p>地毯清洗、沙发清洗、窗户清洁等专业清洁服务</p>
+                    <div class="service-icon">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <h3>壁纸粘贴</h3>
+                    <p>涵盖无纺布、纯纸、PVC、墙布等多种类型壁纸的铺贴</p>
+                    <a href="#" class="service-link">了解更多</a>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-recycle"></i>
-                    <h3>绿色清洁</h3>
-                    <p>使用环保清洁产品，保护您和家人的健康，同时爱护环境</p>
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>墙面修补</h3>
+                    <p>提供壁纸修补、更换及墙面基层处理（如刮腻子、打磨）服务</p>
+                    <a href="#" class="service-link">了解更多</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- 价格信息 -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>服务价格</h2>
+                <p>透明合理的收费标准</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>内墙乳胶漆</h3>
+                        <p class="price">60元/㎡</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul>
+                            <li>含材料、人工及基层处理</li>
+                            <li>环保材料，低VOC含量</li>
+                            <li>多种颜色可选</li>
+                            <li>专业施工团队</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#" class="btn-quote">获取报价</a>
+                    </div>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>硅藻泥</h3>
+                        <p class="price">100元/㎡</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul>
+                            <li>高级环保材料</li>
+                            <li>调湿、除甲醛功能</li>
+                            <li>多种纹理可选</li>
+                            <li>专业施工团队</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#" class="btn-quote">获取报价</a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>壁纸粘贴</h3>
+                        <p class="price">200元/㎡</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul>
+                            <li>含壁纸材料</li>
+                            <li>多种材质可选</li>
+                            <li>墙面基层处理</li>
+                            <li>专业施工团队</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#" class="btn-quote">获取报价</a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>仅人工铺贴</h3>
+                        <p class="price">40元/㎡</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul>
+                            <li>不含壁纸材料</li>
+                            <li>专业铺贴工艺</li>
+                            <li>墙面基层处理</li>
+                            <li>专业施工团队</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#" class="btn-quote">获取报价</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-note">
+                <p>注：1.内墙乳胶漆 60 元/㎡；2.硅藻泥 100 元/㎡；3.含壁纸材料的价格为 200 元/㎡；4.仅人工铺贴费 40 元/㎡。具体报价需根据墙面状况（如是否需要修补）而定，免费上门评估后提供详细报价单。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>常见问题</h2>
+                <p>解答您的疑惑</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>如何预约服务？</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>电话预约</strong>：拨打 139-8765-4321，告知房屋地址、服务类型及需求，工作人员将在 24 小时内上门勘查。</p>
+                        <p><strong>微信预约</strong>：添加客服微信（同手机号），发送 "预约 + 地址 + 服务类型"，附房屋现场照片可加快评估流程。</p>
+                        <p><strong>官网预约</strong>：在线填写预约表单，提交后 1 小时内收到确认回复。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>使用的材料是否环保安全？</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>涂料</strong>：选用多乐士、立邦等知名品牌，通过中国环境标志认证（十环认证），甲醛、VOC 含量符合国家标准，施工后通风 3-7 天即可安全入住。</p>
+                        <p><strong>壁纸及胶黏剂</strong>：壁纸采用无纺布、纯纸等环保材质，胶黏剂为植物淀粉胶，不含甲醛和重金属，适合儿童房、卧室等敏感区域。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>施工工期大概多久？</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>普通住宅（100-120㎡）全屋刷漆：3-5 天（含基层处理、涂刷及干燥时间）。</li>
+                            <li>同面积壁纸粘贴：2-4 天（含墙面预处理、壁纸裁剪及铺贴）。</li>
+                            <li>特殊情况（如墙面损坏严重需修补、复杂图案壁纸对齐）可能延长 1-2 天。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>施工人员是否专业？</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>所有施工师傅均有 5 年以上行业经验，入职前通过技能考核（包括涂刷均匀度、壁纸拼接平整度等）。</li>
+                            <li>持有 "室内装饰施工员"、"涂料施工师" 等职业资格证书，施工过程中遵守规范操作流程。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>售后服务有保障吗？</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>质保期</strong>：墙面刷漆提供 5 年质保（非人为损坏的掉漆、开裂等问题免费维修）；壁纸粘贴提供 3 年质保（含翘边、起皱修复）。</p>
+                        <p><strong>售后响应</strong>：出现问题可拨打服务热线，24 小时内安排师傅上门查看，48 小时内完成维修。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>支付方式有哪些？</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>支持分期付款：预约时支付 30% 定金，施工完成验收合格后支付尾款 70%。</p>
+                        <p>支付渠道：微信支付、支付宝、银行卡转账、现金均可，提供正规装修发票（需提前告知开票信息）。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>施工过程中会保护家具和地面吗？</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>施工前会对家具、家电、地板等进行全面保护，使用防尘布、塑料膜覆盖，门窗边缘贴美纹纸，避免涂料或胶黏剂污染。</p>
+                        <p>施工结束后清理现场垃圾，确保环境整洁。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">关于康康保洁</h2>
+            <div class="section-header">
+                <h2>关于我们</h2>
+                <p>专业的墙面装饰服务提供商</p>
+            </div>
             <div class="about-content">
-                <div class="about-text">
-                    <p>康康保洁公司成立于2020年，是一家专注于提供高品质清洁服务的企业。我们拥有一支经验丰富、训练有素的专业团队，致力于为客户提供最优质的清洁服务。</p>
-                    <p>我们的使命是通过专业的清洁服务，为客户创造健康、舒适、整洁的生活和工作环境，让每一位客户都能享受到高品质的清洁体验。</p>
-                    <ul class="about-features">
-                        <li><i class="fas fa-check"></i> 专业团队，经验丰富</li>
-                        <li><i class="fas fa-check"></i> 使用高品质清洁设备和环保产品</li>
-                        <li><i class="fas fa-check"></i> 灵活的服务时间，满足不同需求</li>
-                        <li><i class="fas fa-check"></i> 合理的价格，透明的收费标准</li>
-                    </ul>
-                </div>
                 <div class="about-image">
-                    <img src="images/about-us.svg" alt="康康保洁团队" class="img-placeholder">
+                    <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="装修团队">
+                </div>
+                <div class="about-text">
+                    <h3>恒达装饰公司</h3>
+                    <p>我们是一家专注于房屋刷漆（内墙、外墙）、壁纸粘贴等装修服务的专业公司，覆盖信阳市平桥区及周边区域，包括家庭住宅、公寓、小型商业场所等。</p>
+                    <p>公司拥有一支经验丰富、技术精湛的施工团队，所有施工人员均有5年以上行业经验，持有相关职业资格证书。</p>
+                    <p>我们坚持使用环保材料，注重施工质量和客户体验，致力于为客户提供环保、精致的墙面装饰服务，让每一面墙都成为家的风景。</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-text">年行业经验</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-text">成功案例</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-text">客户满意度</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- 联系我们 -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">联系我们</h2>
+            <div class="section-header">
+                <h2>联系我们</h2>
+                <p>随时为您提供服务</p>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
                             <h3>地址</h3>
-                            <p>中国某省某市某区某街道123号</p>
+                            <p>江苏省南京市玄武区人民路66号（邮编：464000）</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
                             <h3>电话</h3>
-                            <p>+86 123 4567 8910</p>
+                            <p>139-8765-4321（工作时间：9:00-18:00）</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
                             <h3>邮箱</h3>
-                            <p>contact@kangkangcleaning.com</p>
+                            <p>kangkangzhuangxiu@163.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>营业时间</h3>
-                            <p>周一至周日: 8:00 - 20:00</p>
+                        <div class="contact-icon">
+                            <i class="fab fa-weixin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>微信公众号</h3>
+                            <p>恒达装饰公司服务</p>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <h3>预约服务</h3>
+                    <form id="appointmentForm">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="您的姓名" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="您的邮箱" required>
+                            <input type="tel" id="phone" name="phone" placeholder="联系电话" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="您的电话" required>
+                            <select id="service" name="service" required>
+                                <option value="">选择服务类型</option>
+                                <option value="内墙刷漆">内墙刷漆</option>
+                                <option value="外墙刷漆">外墙刷漆</option>
+                                <option value="壁纸粘贴">壁纸粘贴</option>
+                                <option value="自备材料">自备材料</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="您的留言" required></textarea>
+                            <textarea id="message" name="message" placeholder="详细需求描述" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">提交留言</button>
+                        <button type="submit" class="btn btn-primary">提交预约</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- AI助手区域 -->
+    <div class="ai-assistant-container">
+        <div class="ai-assistant-button">
+            <i class="fas fa-robot"></i>
+            <span>智能助手</span>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h2>康康保洁</h2>
-                    <p>专业清洁，品质生活</p>
+                    <h2>恒达装饰公司</h2>
+                    <p>让每一面墙都成为家的风景</p>
                 </div>
                 <div class="footer-links">
                     <h3>快速链接</h3>
                     <ul>
                         <li><a href="#home">首页</a></li>
                         <li><a href="#services">服务项目</a></li>
+                        <li><a href="#pricing">价格信息</a></li>
+                        <li><a href="#faq">常见问题</a></li>
                         <li><a href="#about">关于我们</a></li>
                         <li><a href="#contact">联系我们</a></li>
                     </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系方式</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 江苏省南京市玄武区人民路66号</p>
+                    <p><i class="fas fa-phone"></i> 139-8765-4321</p>
+                    <p><i class="fas fa-envelope"></i> hengdazhuangxiu@163.com</p>
                 </div>
                 <div class="footer-social">
                     <h3>关注我们</h3>
@@ -167,10 +412,28 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 康康保洁公司. 保留所有权利.</p>
+                <p>&copy; 2023 恒达装饰公司. 保留所有权利.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Voiceflow AI聊天机器人集成 -->
+    <script type="text/javascript"> 
+        (function(d, t) { 
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0]; 
+            v.onload = function() { 
+                window.voiceflow.chat.load({ 
+                    verify: { projectID: '6881fbcbaa7860768acf94c6' }, 
+                    url: 'https://general-runtime.voiceflow.com', 
+                    versionID: 'production', 
+                    voice: { 
+                        url: "https://runtime-api.voiceflow.com" 
+                    } 
+                }); 
+            } 
+            v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s); 
+        })(document, 'script'); 
+    </script>
 
     <script src="script.js"></script>
 </body>
